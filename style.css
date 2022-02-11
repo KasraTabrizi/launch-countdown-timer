@@ -1,0 +1,54 @@
+/* Variable declaration */
+:root {
+  /* Primary Colors */
+  --prim-grayish-blue: hsl(237, 18%, 59%);
+  --prim-soft-red: hsl(345, 95%, 68%);
+
+  /* Neutral Colors */
+  --ntr-white: hsl(0, 0%, 100%);
+  --ntr-dark-desatur-blue: hsl(236, 21%, 26%);
+  --ntr-very-dark-blue: hsl(235, 16%, 14%);
+  --ntr-ultra-dark-blue: hsl(234, 17%, 12%);
+
+  /* Font weight */
+  --font-weight-700: 700;
+}
+
+/* Basic CSS reset */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 14px;
+  background-color: var(--ntr-very-dark-blue);
+}
+
+#wrapper__container {
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#pattern_hill__background {
+  width: 100%;
+  height: 30vh;
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
+  background-image: url("images/pattern-hills.svg");
+  background-size: cover;
+}
+
+#stars__background {
+  background-image: url("images/bg-stars.svg");
+  background-size: cover;
+  width: 100%;
+  height: 80vh;
+}
